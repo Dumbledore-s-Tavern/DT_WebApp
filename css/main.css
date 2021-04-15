@@ -169,6 +169,12 @@ nav a:hover{
   cursor: url(../img/cursor.gif), auto;
   color: #f0e595;
   background-color: #3b3427;
+
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  border: solid;
+  outline: none;
 }
 .contact-form{
   display: flex;
