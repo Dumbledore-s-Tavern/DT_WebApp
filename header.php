@@ -9,7 +9,7 @@
 	<body>
 		<header>
 			<div class="wrapper">
-				<img class="logo" src="img/logo.png" alt="Logo not avaliable"/>
+				<img class="logo" src="img/logo.PNG" alt="Logo not avaliable"/>
 			<nav>
 				<a href="index.php">Home</a>
 				<a href="about.php">About</a>
