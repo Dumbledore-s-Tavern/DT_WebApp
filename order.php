@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
 		<title>Dumbledore’s Tavern - Imagine the impossible!</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<?php require_once 'head.php'; ?>
 	</head>
 	<body>
 		<?php

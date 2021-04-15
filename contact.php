@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
 		<title>Dumbledore’s Tavern - Imagine the impossible!</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<?php require_once 'head.php'; ?>
 	</head>
 	<body>
 		<?php
@@ -13,7 +11,7 @@
 		<main>
 			<h1>Contact</h1> <br>
 			<h2>Send e-mail to dumbledoretavern@gmail.com</h2>
-			<form class="contact-form" action="contact-form.php" method="post">
+			<form class="contact-form" action="backend/contact-form.php" method="post">
 				<input type="text" name="name" placeholder="Full name"><br>
 				<input type="text" name="mail" placeholder="Your e-mail"><br>
 				<input type="text" name="subject" placeholder="Subject"> <br>
