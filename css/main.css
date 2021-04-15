@@ -166,7 +166,7 @@ nav a:hover{
   align-items: center;
   margin: 0 auto;
   cursor: pointer;
-  cursor: url('https://i.imgur.com/htYvhnS.gif'), auto;
+  cursor: url(../img/cursor.gif), auto;
   color: #f0e595;
   background-color: #3b3427;
 }
@@ -177,7 +177,7 @@ nav a:hover{
   flex-direction: column;
   margin: 0 auto;
   cursor: pointer;
-  cursor: url('https://i.imgur.com/htYvhnS.gif'), auto;
+  cursor: url(../img/cursor.gif), auto;
 }
 .menu{
   margin-left: auto;
