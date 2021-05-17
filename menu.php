@@ -15,7 +15,7 @@
 			<!-- Slideshow container -->
 			<div class="slideshow-container">
 
-			<!-- Full-width images with number and caption text -->
+			<!-- Plaatjes met nummers en tekst -->
 			<div class="menuSlides fade">
 				<div class="numbertext">1 / 7</div>
 				<img class="img-menu" src="img/menu/Menu_DT_1.png" alt="Menucart 1" style="width:100%">
@@ -52,13 +52,13 @@
 				<div class="text">Menucart 7</div>
 			</div>
 
-			<!-- Next and previous buttons -->
+			<!-- Volgende en terug buttons -->
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 			<br>
 
-			<!-- The dots/circles -->
+			<!-- The dots/circles (Bollentjes) -->
 			<div style="text-align:center">
 				<span class="dot" onclick="currentSlide(1)"></span>
 				<span class="dot" onclick="currentSlide(2)"></span>
@@ -98,22 +98,20 @@
 			dots[slideIndex-1].className += " active";
 			}
 			</script>
-			<!-- Handige links: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-			
-			<!-- Modal test -->
 
-			<!-- The Modal -->
+			<!-- De Modal -->
 			<div id="myModal" class="modal">
-				<!-- The Close Button -->
+				<!-- Sluiten Knop -->
 				<span class="close">&times;</span>
 
-				<!-- Modal Content (The Image) -->
+				<!-- Modal Content (Het Plaatje) -->
 				<img class="modal-content" id="img01">
 
-				<!-- Modal Caption (Image Text) -->
+				<!-- Modal Caption (Plaatje Tekst) -->
 				<div id="caption"></div>
 			</div>
 
+			<!-- Script voor modal -->
 			<script>
 			// Get the modal
 			var modal = document.getElementById('myModal');
@@ -139,7 +137,12 @@
 			modal.style.display = "none";
 			}
 			</script>
-			
+
+			<!-- Handige links: 
+			https://www.w3schools.com/howto/howto_js_slideshow.asp
+			https://stackoverflow.com/questions/55368866/how-to-create-modal-image-for-multiple-images-inside-a-for-loop
+			https://www.w3schools.com/howto/howto_css_modal_images.asp
+			-->
 		</main>
 		<?php
 			require_once('footer.php');
