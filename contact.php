@@ -11,7 +11,7 @@
 		<main>
 			<h1>Contact</h1> <br>
 			<h2>Send e-mail to dumbledoretavern@gmail.com</h2><br>
-			<form class="contact-form" action="backend/contactController.php" method="post">
+			<form class="contact-form" action="./backend/contactController.php" method="post">
 				<input type="text" name="name" placeholder="Full name"><br>
 				<input type="text" name="mail" placeholder="Your e-mail"><br>
 				<input type="text" name="subject" placeholder="Subject"> <br>

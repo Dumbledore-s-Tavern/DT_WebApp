@@ -23,27 +23,26 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
 <?php
 	//Input (van form)
 	$name = $_POST['name'];
-	$mailInput = $_POST['mail'];
+	$visitor_mail = $_POST['mail'];
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 
-	//Foutafhandeling (als er niks is ingevuld --> laat dan dit zien)
-	if(empty($name||$mailInput||$subject||$message))
-	{
-		echo "It is mandatory to fill in everything!";
-		exit;
-	}
-
 	//Informatie (versturen van mail)
-	$mailTo = "dumbledoretavern@gmail.com";
-	$nameFrom = "From:".$name;
-	$mailFrom = "Email:".$mailInput;
-	$mailSubject = "Subject:".$subject;
-	$messageFrom = "From:".$message;
+	$email_from = "dumbledoretavern@gmail.com";
+	$email_subject = "Nieuwe Mail Dumbledore’s Tavern";
+	$email_body = "Je hebt een nieuw bericht van $name \n".
+				 "Email: $visitor_mail \n".
+				 "Betreft: $subject: \n".
+				 "Bericht: $message \n";
+
+	$to = "dumbledoretavern@gmail.com";
+	$headers = "From: $email_from \r\n";
 
 	//Stuur de data via email
-	mail($mailTo, $nameFrom, $mailFrom, $mailSubject, $messageFrom);
-	header("Location: ../contact.php");
+	mail($to,$email_subject,$email_body,$headers);
+
+	$msg = "Mail is verzonden!";
+	header("Location: ./contact.php?msg=$msg");
 ?>
 
 <!-- 
