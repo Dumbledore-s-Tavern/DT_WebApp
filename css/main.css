@@ -263,6 +263,7 @@ nav a:hover{
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
+  cursor: url(../img/cursor.gif), auto;
   height: 15px;
   width: 15px;
   margin: 0 2px;
