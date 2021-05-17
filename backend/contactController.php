@@ -13,7 +13,7 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
 	$headers = "Message: ".$message;
 
 	mail($mailTo, $subject, $headers);
-	header("Location: contact.php?mailsend");
+	header("Location: ../contact.php?mailsend");
 }
 
 ?>
