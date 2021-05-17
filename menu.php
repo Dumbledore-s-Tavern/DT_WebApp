@@ -18,43 +18,37 @@
 			<!-- Full-width images with number and caption text -->
 			<div class="menuSlides fade">
 				<div class="numbertext">1 / 7</div>
-				<img id="slide1" src="img/menu/Menu_DT_1.png" alt="Menucart 1" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_1.png" alt="Menucart 1" style="width:100%">
 				<div class="text">Menucart 1</div>
 			</div>
-			
 			<div class="menuSlides fade">
 				<div class="numbertext">2 / 7</div>
-				<img id="slide2" src="img/menu/Menu_DT_2.png" alt="Menucart 2" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_2.png" alt="Menucart 2" style="width:100%">
 				<div class="text">Menucart 2</div>
 			</div>
-
 			<div class="menuSlides fade">
 				<div class="numbertext">3 / 7</div>
-				<img id="slide3" src="img/menu/Menu_DT_3.png" alt="Menucart 3" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_3.png" alt="Menucart 3" style="width:100%">
 				<div class="text">Menucart 3</div>
 			</div>
-
 			<div class="menuSlides fade">
 				<div class="numbertext">4 / 7</div>
-				<img id="slide4" src="img/menu/Menu_DT_4.png" alt="Menucart 4" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_4.png" alt="Menucart 4" style="width:100%">
 				<div class="text">Menucart 4</div>
 			</div>
-
 			<div class="menuSlides fade">
 				<div class="numbertext">5 / 7</div>
-				<img id="slide5" src="img/menu/Menu_DT_5.png" alt="Menucart 5" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_5.png" alt="Menucart 5" style="width:100%">
 				<div class="text">Menucart 5</div>
 			</div>
-
 			<div class="menuSlides fade">
 				<div class="numbertext">6 / 7</div>
-				<img id="slide6" src="img/menu/Menu_DT_6.png" alt="Menucart 6" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_6.png" alt="Menucart 6" style="width:100%">
 				<div class="text">Menucart 6</div>
 			</div>
-
 			<div class="menuSlides fade">
 				<div class="numbertext">7 / 7</div>
-				<img id="slide7" src="img/menu/Menu_DT_7.png" alt="Menucart 7" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_7.png" alt="Menucart 7" style="width:100%">
 				<div class="text">Menucart 7</div>
 			</div>
 
@@ -122,148 +116,19 @@
 
 			<script>
 			// Get the modal
-			var modal = document.getElementById("myModal");
+			var modal = document.getElementById('myModal');
 
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide1");
+			// Get the images and bind an onclick event on each to insert it inside the modal
+			// use its "alt" text as a caption
+			var images = document.querySelectorAll(".img-menu");
 			var modalImg = document.getElementById("img01");
 			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
+			for(let i = 0; i < images.length; i++){
+			images[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
 			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			</script>
-			<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide2");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			</script>
-			<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide3");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			</script>
-			<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide4");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			</script>
-			<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide5");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			</script>
-			<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide6");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			</script>
-			<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("slide7");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
 			}
 
 			// Get the <span> element that closes the modal
