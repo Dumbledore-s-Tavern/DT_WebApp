@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 
 if (isset($_POST['mail']) && $_POST['mail'] != '') {
 	$name = $_POST['name'];
@@ -16,4 +16,37 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
 	header("Location: ../contact.php?mailsend");
 }
 
+?> -->
+
+
+
+<?php
+	//Input (van form)
+	$name = $_POST['name'];
+	$mailInput = $_POST['mail'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
+
+	//Foutafhandeling (als er niks is ingevuld --> laat dan dit zien)
+	if(empty($name||$mailInput||$subject||$message))
+	{
+		echo "It is mandatory to fill in everything!";
+		exit;
+	}
+
+	//Informatie (versturen van mail)
+	$mailTo = "dumbledoretavern@gmail.com";
+	$nameFrom = "From:".$name;
+	$mailFrom = "Email:".$mailInput;
+	$mailSubject = "Subject:".$subject;
+	$messageFrom = "From:".$message;
+
+	//Stuur de data via email
+	mail($mailTo, $nameFrom, $mailFrom, $mailSubject, $messageFrom);
+	header("Location: ../contact.php");
 ?>
+
+<!-- 
+TODO:
+- Toevoegen van een msg wanneer de mail succesvol is verzonden
+ -->
