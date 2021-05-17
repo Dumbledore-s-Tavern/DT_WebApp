@@ -42,7 +42,7 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
 	mail($to,$email_subject,$email_body,$headers);
 
 	$msg = "Mail is verzonden!";
-	header("Location: ./contact.php?msg=$msg");
+	header("Location: ../contact.php?msg=$msg");
 ?>
 
 <!-- 
