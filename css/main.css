@@ -231,6 +231,10 @@ textarea{
 /* Sildeshow Menu Classes */
 * {box-sizing:border-box}
 
+.img-menu{
+  width:100%
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -407,10 +411,27 @@ textarea{
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
+@media only screen and (max-width: 1082px){
+  .img3{
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 862px){
+  .img3{
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 655px){
+  .img, .orderimg, .img3{
     width: 100%;
   }
+
+}
+@media only screen and (max-width: 522px){
+  
+}
+@media only screen and (max-width: 440px){
+  
 }
 
 /* ==========================================================================

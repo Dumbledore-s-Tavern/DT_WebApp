@@ -18,37 +18,37 @@
 			<!-- Plaatjes met nummers en tekst -->
 			<div class="menuSlides fade">
 				<div class="numbertext">1 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_1.png" alt="Menucart 1" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_1.png" alt="Menucart 1">
 				<div class="text">Menucard 1</div>
 			</div>
 			<div class="menuSlides fade">
 				<div class="numbertext">2 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_2.png" alt="Menucart 2" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_2.png" alt="Menucart 2">
 				<div class="text">Menucard 2</div>
 			</div>
 			<div class="menuSlides fade">
 				<div class="numbertext">3 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_3.png" alt="Menucart 3" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_3.png" alt="Menucart 3">
 				<div class="text">Menucard 3</div>
 			</div>
 			<div class="menuSlides fade">
 				<div class="numbertext">4 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_4.png" alt="Menucart 4" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_4.png" alt="Menucart 4">
 				<div class="text">Menucard 4</div>
 			</div>
 			<div class="menuSlides fade">
 				<div class="numbertext">5 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_5.png" alt="Menucart 5" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_5.png" alt="Menucart 5">
 				<div class="text">Menucard 5</div>
 			</div>
 			<div class="menuSlides fade">
 				<div class="numbertext">6 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_6.png" alt="Menucart 6" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_6.png" alt="Menucart 6">
 				<div class="text">Menucard 6</div>
 			</div>
 			<div class="menuSlides fade">
 				<div class="numbertext">7 / 7</div>
-				<img class="img-menu" src="img/menu/Menu_DT_7.png" alt="Menucart 7" style="width:100%">
+				<img class="img-menu" src="img/menu/Menu_DT_7.png" alt="Menucart 7">
 				<div class="text">Menucard 7</div>
 			</div>
 
@@ -110,6 +110,7 @@
 				<!-- Modal Caption (Plaatje Tekst) -->
 				<div id="caption"></div>
 			</div>
+			<p>Tap on the menucart for full screen!</p>
 
 			<!-- Script voor modal -->
 			<script>
